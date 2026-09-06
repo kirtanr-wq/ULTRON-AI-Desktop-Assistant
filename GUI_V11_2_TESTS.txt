@@ -1,0 +1,55 @@
+ULTRON v11.2 — VIBRANT CORE + VOICE PULSE TEST
+
+SETUP
+1. Extract this build into a fresh folder.
+2. If PySide6/pynput are already installed from v11.1, you do NOT need to reinstall.
+3. Run RUN_ULTRON_GUI.bat.
+
+WHAT CHANGED
+
+VISUAL DENSITY
+- Stronger red panel borders and highlights.
+- Larger central reactor area.
+- Additional concentric scanner rings.
+- Animated radar sweep.
+- Four orbital paths instead of three.
+- Orbiting energy nodes.
+- More particles / sparks.
+- HUD corner brackets.
+- Peripheral labels:
+    CORE LINK // STABLE
+    NEURAL BUS // LIVE
+    VOICE CHANNEL // 01
+    AUTONOMY // ARMED
+- Extra live system metrics:
+    DISK
+    PROCESSES
+    UPTIME
+- Added bottom signal strip below voice input.
+
+VOICE REACTIVE CORE
+The backend now emits:
+    TTS START>
+    TTS END>
+
+While Ultron is physically speaking:
+- the core repeatedly grows and shrinks,
+- orbital rings also breathe,
+- an equalizer halo appears around the reactor,
+- the GUI state reads SPEAKING,
+- VOICE module shows OUTPUT.
+
+TEST
+1. Start GUI.
+2. Say: "Ultron"
+3. Watch the core while Ultron says "Yes?"
+4. Ask:
+   "Tell me what you can do."
+5. The core should visibly contract/expand during the entire spoken response.
+6. Say:
+   "Open YouTube."
+7. Confirm normal GUI/backend behavior remains intact.
+
+NOTE
+This is intentionally only a visual + speaking-animation pass.
+No new assistant behavior was added in v11.2.

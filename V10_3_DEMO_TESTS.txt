@@ -1,0 +1,38 @@
+ULTRON V10.3 BACKEND DEMO TESTS
+===============================
+
+SCREEN INTELLIGENCE
+- What's on my screen?
+- Summarize this page
+- Read this error
+- What should I click next?
+- Read this
+
+SYSTEM CONTROLS
+- Volume up
+- Volume down
+- Mute
+- Switch window
+- Minimize this window
+- Maximize this window
+- Show my desktop
+- Open Task Manager
+- Refresh page
+- Battery status
+- System status
+- Brightness up  (hardware dependent)
+- Brightness down (hardware dependent)
+
+GROUNDED WEB RESEARCH
+- Research humanoid robots
+- Research the latest OpenAI model
+- Find the latest about NVIDIA AI chips
+- What are the latest developments in self-driving cars?
+
+AGENT MODE
+- Agent mode: open Bluetooth and connect my Rockerz 480
+- Agent mode: open YouTube and play the first TMKOC video
+
+NOTE:
+Brightness control depends on the laptop/display exposing Windows WMI brightness methods.
+If grounded Gemini web search is unavailable for the current API quota/model, Ultron safely opens Google instead of fabricating a researched answer.

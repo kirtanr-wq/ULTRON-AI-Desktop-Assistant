@@ -1,0 +1,52 @@
+ULTRON V10 — QUICK TEST COMMANDS
+================================
+
+KEEP v9.1 AS YOUR FALLBACK BUILD.
+
+1) SCREEN INTELLIGENCE
+   "What am I looking at?"
+   "Read my screen."
+   "What error is on my screen?"
+
+2) SYSTEM CONTROL
+   "Volume up"
+   "Minimize this window"
+   "Switch window"
+   "Scroll down"
+   "Take a screenshot"
+
+3) FILE / FOLDER TOOLS
+   "Create a folder called Ultron Demo on desktop"
+   "Create a text file on desktop called demo.txt saying Ultron version ten is online"
+   "Open file demo"
+   "Find file demo"
+   "Move demo to documents"
+   "Rename demo to ultron-demo"
+
+   Safety: v10 does NOT expose autonomous deletion.
+
+4) CLIPBOARD INTELLIGENCE
+   Copy some text first, then say:
+   "What's in my clipboard?"
+   "Summarize my clipboard"
+   "Rewrite my clipboard professionally"
+   "Translate my clipboard to Hindi"
+   "Explain my clipboard"
+
+5) NORMAL PLANNER (stable path)
+   "Open YouTube and then search for TMKOC and play the first video"
+   "Open Amazon and then search for mechanical keyboards"
+
+6) V10 AGENT MODE (new observe -> decide -> act -> observe loop)
+   "Agent mode: connect my Rockerz 480"
+   "Autonomously open Bluetooth and connect my Rockerz 480"
+
+Agent Mode is capped at 7 actions and final success is fail-closed: the visible
+screen must verify the goal. Payments, passwords/OTP, deletion and destructive
+workflows are blocked.
+
+V10.2 NESTED FILE TESTS
+Create a folder called Ultron Demo on desktop
+Create a file called test.txt inside Ultron Demo saying hello world
+Create a text file named notes.txt inside Ultron Demo on desktop containing planner works
+Create a file inside Ultron Demo called demo.md with hello there

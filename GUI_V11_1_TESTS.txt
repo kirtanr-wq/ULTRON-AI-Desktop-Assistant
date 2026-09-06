@@ -1,0 +1,54 @@
+ULTRON v11.1 GUI ALPHA — FIRST TEST
+
+SETUP
+1. Extract the ZIP.
+2. Run INSTALL.bat once.
+   v11.1 adds PySide6 for the GUI.
+3. Double-click RUN_ULTRON_GUI.bat.
+4. The GUI should open maximized and automatically start the existing backend.
+
+EXPECTED VISUAL BEHAVIOR
+- STANDBY:
+  dim red core, VOICE module armed.
+- Say "Ultron":
+  core wakes and becomes ACTIVE.
+- Speak a command:
+  VOICE INPUT panel shows what was heard.
+  core changes to THINKING.
+- Normal desktop command:
+  DESKTOP module activates.
+- "What's on my screen?":
+  VISION module activates and core enters VISION state.
+- Planner task:
+  PLANNER module activates and timeline shows plan activity.
+- Agent Mode:
+  AGENT + VISION modules light up.
+- "Learn this workflow":
+  TEACH module enters LEARNING / RECORDING state.
+- Learned-workflow replay:
+  TEACH shows REPLAY and the timeline updates.
+- F11:
+  fullscreen.
+- ESC:
+  leaves fullscreen; pressing ESC again closes the window.
+
+IMPORTANT
+- This GUI does not replace the backend.
+- gui.py starts main.py as a child process and listens to its terminal diagnostics.
+- If the GUI crashes, the v11.0 backend remains separately usable through RUN_ULTRON.bat.
+- The UI is intentionally voice-first: no grid of command buttons.
+
+FILES ADDED
+- gui.py
+- RUN_ULTRON_GUI.bat
+- GUI_V11_1_TESTS.txt
+- PySide6 added to requirements.txt
+
+FIRST DEMO COMMANDS
+Ultron
+Open YouTube and search for TMKOC
+What's on my screen?
+Remember that my preferred editor is VS Code
+Learn this workflow
+Cancel learning
+Go on standby

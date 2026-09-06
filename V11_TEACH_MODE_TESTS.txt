@@ -1,0 +1,61 @@
+ULTRON v11.0 — TEACH ME MODE
+
+IMPORTANT FIRST STEP
+Run INSTALL.bat once because v11 adds one dependency: pynput.
+
+BEST DEMO: LEARN A WORKSPACE
+1. Start Ultron.
+2. Say: "Ultron"
+3. Say: "Learn this workflow"
+   Expected:
+   TEACH> recording started
+   ULTRON> Teach Mode started...
+
+4. MANUALLY demonstrate a workflow using clicks/navigation.
+   Example:
+   - Open Chrome using the mouse
+   - Open a website/bookmark
+   - Open VS Code
+   - Click your Ultron project
+   - Arrange/focus the workspace
+   Terminal should show:
+   TEACH EVENT> click ...
+   TEACH EVENT> key ...
+   TEACH EVENT> hotkey ...
+   TEACH EVENT> scroll ...
+
+5. Say:
+   "Stop learning and call this hackathon workspace"
+
+   Expected:
+   TEACH> saved ... events -> C:\\Users\\<you>\\.ultron\\workflows\\hackathon_workspace.json
+   ULTRON> I learned hackathon workspace with N actions.
+
+6. Close/minimize the apps you demonstrated.
+
+7. Say:
+   "Run hackathon workspace"
+
+   Expected:
+   ULTRON> Running learned workflow hackathon workspace.
+   TEACH REPLAY> hackathon workspace | N events
+   TEACH REPLAY STEP> ...
+   ULTRON> Finished learned workflow hackathon workspace.
+
+OTHER COMMANDS
+- "What workflows have you learned?"
+- "Replay hackathon workspace"
+- "Delete workflow hackathon workspace"
+- "Cancel learning"
+
+PRIVACY / SAFETY
+- Teach Mode intentionally DOES NOT store ordinary typed characters.
+- It records mouse clicks, scrolls, navigation/control keys and modifier shortcuts.
+- Do not demonstrate passwords, OTPs, payment flows, or private credentials.
+- Workflows are stored locally in ~/.ultron/workflows.
+- Replay scales click coordinates if screen resolution changes.
+- v10.8 remains your fallback build.
+
+BEST HACKATHON DEMO
+Teach navigation/workspace setup rather than text-heavy form filling.
+That makes the replay visually impressive and avoids storing private typed content.

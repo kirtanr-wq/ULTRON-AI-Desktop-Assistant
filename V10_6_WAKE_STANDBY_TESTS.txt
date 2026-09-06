@@ -1,0 +1,33 @@
+ULTRON V10.6 — WAKE + STANDBY TESTS
+
+Expected startup:
+- Terminal prints STATE> STANDBY
+- Ultron says NOTHING aloud.
+
+TEST 1 — Ignore speech while asleep
+Say: open YouTube
+Expected: ignored; no action, no spoken reply.
+
+TEST 2 — Wake only
+Say: Ultron
+Expected: STATE> ACTIVE and Ultron says: Yes?
+
+TEST 3 — Active conversation
+Say: open YouTube
+Expected: YouTube opens without repeating the wake word.
+
+TEST 4 — Enter standby
+Say: go on standby mode
+Expected: Ultron says: Standing by. Then STATE> STANDBY.
+
+TEST 5 — Ignore ordinary speech again
+Say: open Google
+Expected: ignored; no action.
+
+TEST 6 — Wake with a command in one sentence
+Say: Ultron, open Google
+Expected: STATE> ACTIVE and Google opens.
+
+TEST 7 — Permanent shutdown while active
+Say: shut down / exit Ultron (use whichever existing exit phrase routes to exit)
+Expected: application exits normally.

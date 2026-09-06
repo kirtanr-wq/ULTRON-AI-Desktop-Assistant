@@ -1,0 +1,49 @@
+ULTRON v10.7 — DAILY COMPUTER ASSISTANT PACK TESTS
+
+Wake first: "Ultron"
+
+LOCAL PRODUCTIVITY
+1. Take a note submit hackathon PPT tomorrow
+2. Show my notes
+3. Add finish demo video to my task list
+4. What are my tasks
+5. Mark finish demo video as complete
+6. Set a timer for 20 seconds
+7. Remind me in 1 minute to test Ultron
+
+FILES / WORKSPACE
+8. Find my resume file
+9. Find the probability PDF I downloaded recently
+10. Open Ultron in VS Code
+11. Close everything except VS Code  (safe behavior: minimizes others)
+12. Take a screenshot
+
+AI / SCREEN / CLIPBOARD
+13. Explain what I just copied
+14. Summarize this PDF
+15. Look at this error and fix it
+16. Draft an email to my professor saying I will be late
+
+MEDIA / UTILITIES
+17. Next song
+18. Previous song
+19. Volume 40 percent
+20. What is 18% of 47500
+
+PREFERENCES
+21. Whenever I say editor, use VS Code
+
+EXISTING FEATURES TO REGRESSION TEST
+22. Open YouTube and search for TMKOC
+23. First video
+24. What am I looking at
+25. Agent mod connect my Rockerz 480
+26. Go on standby
+27. Say "open Google" (must be ignored)
+28. Say "Ultron" then "open Google"
+
+NOTES
+- Email drafting is implemented locally: draft + clipboard; it does NOT claim to send email.
+- Calendar cloud reading requires account OAuth/integration; local reminders/tasks work without it.
+- Weather/current-info requests continue through Ultron's existing web/AI path; grounded web research falls back to Google on quota errors.
+- "Close everything except X" is intentionally safe: it minimizes other windows instead of destructively closing unsaved work.

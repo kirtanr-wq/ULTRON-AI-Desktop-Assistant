@@ -1,0 +1,38 @@
+ULTRON V10.4 — DEMO STABILITY TESTS
+
+1) FUZZY AGENT MODE
+Say: Agent mode connect my Rockerz 480
+Also test: Agent mod connect my Rockerz 480
+Expected: AGENT GOAL / AGENT ACTION logs, not ROUTE> ask_ai.
+
+2) GOOGLE COMPOUND SEARCH
+Say: Open Google and search for OpenAI
+Expected: ROUTE> search_site | google|||openai
+Expected: Google results URL opens directly. No PLAN> block.
+
+3) AMAZON COMPOUND SEARCH
+Say: Open Amazon and search for mechanical keyboards
+Expected: ROUTE> search_site | amazon|||mechanical keyboards
+Expected: Amazon results open directly. No PLAN> block.
+
+4) YOUTUBE SHORTHAND
+Say: Open YouTube
+Say: Search for TMKOC
+Say: First video
+Expected: ROUTE> play_youtube | tmkoc
+
+5) RESEARCH QUOTA FALLBACK
+Say: Research the latest developments in humanoid robots
+If Gemini grounded research works: Ultron summarizes it.
+If API returns 429/quota: WEB RESEARCH FALLBACK> ... and Google results open automatically.
+It must NOT stop at only "research service is busy".
+
+6) REGRESSION CHECK
+Say: What am I looking at?
+Say: Open Bluetooth
+Say: Switch window
+Say: Remember that my demo word is plasma
+Say: What is my demo word?
+
+FREEZE RULE:
+If these pass, do not add major backend features before recording the demo.

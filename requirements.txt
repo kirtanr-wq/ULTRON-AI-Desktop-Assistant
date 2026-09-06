@@ -1,0 +1,17 @@
+google-genai
+python-dotenv
+pyautogui
+psutil
+pyperclip
+pyttsx3
+SpeechRecognition
+sounddevice
+scipy
+pillow
+
+pywin32
+yt-dlp
+
+pynput
+
+PySide6

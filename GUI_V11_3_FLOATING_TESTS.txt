@@ -1,0 +1,56 @@
+ULTRON v11.3 — FLOATING COMPANION TESTS
+
+SETUP
+1. Extract into a fresh folder.
+2. Run RUN_ULTRON_GUI.bat.
+3. No new Python dependency is required beyond v11.2.
+
+MAIN TEST
+1. Say: "Ultron"
+2. Say: "Open YouTube"
+
+EXPECTED:
+- Full Ultron dashboard hides.
+- A small transparent red Ultron orb appears in the bottom-right.
+- The orb stays ALWAYS ON TOP over the browser.
+- It should show EXECUTING / ACTIVE / SPEAKING states.
+- While Ultron speaks, the mini orb grows/shrinks and shows voice equalizer ticks.
+- YouTube opens normally.
+
+RESTORE
+- Left-click the floating orb once.
+Expected:
+- Floating orb disappears.
+- Full Ultron dashboard returns maximized.
+
+DRAG
+- Hold left mouse button on the orb and drag it.
+Expected:
+- Orb moves anywhere on the desktop.
+- Releasing after a drag should NOT reopen the dashboard.
+
+RIGHT CLICK
+- Right-click the floating orb.
+Options:
+  Open Ultron
+  Exit Ultron
+
+OTHER APP TESTS
+- "Open VS Code"
+- "Open Spotify"
+- "Open Bluetooth settings"
+- "Search Google for OpenAI"
+- "Open Downloads"
+
+All should collapse the dashboard to the floating companion before/while the external window takes focus.
+
+PLANNER / AGENT
+- Multi-step planner tasks that open websites/apps also collapse into companion mode.
+- Agent Mode collapses into companion mode while it is operating.
+- Learned workflow replay collapses into companion mode.
+
+IMPORTANT
+- Clicking the mini orb restores the dashboard.
+- Task completion does NOT force the big dashboard back over the app you are using.
+- Internal vision actions do not automatically restore the big dashboard.
+- Backend remains the same; this is a GUI behavior upgrade.
